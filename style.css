@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    max-width: 70%;
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    object-fit: contain;
+    margin: 2rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu a{
+    margin-left: 1.6rem;
+    color: hsl(0, 0%, 57%);
+    font-weight: 500;
+    font-size: 0.77rem;
+    transition: 0.3s ease;
+}
+
+.menu a:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+section{
+    width: 100%;
+    display: grid;
+    gap: 1.4rem;
+    grid-template-columns: 2fr auto;
+}
+
+
+.image-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+.sec-main {
+    display: grid;
+    gap: 1rem;
+    width: 38rem;
+}
+
+.left-cont {
+    width: 40%;
+    float: left;
+}
+
+.right-cont {
+    width: 50%;
+    float: right;
+}
+
+.left-cont h1 {
+    width: 100%;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: hsl(240, 100%, 5%);
+}
+
+.content p{
+    color: hsl(233, 8%, 79%);
+    font-weight: 550;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: 0.77rem 2.66rem;
+    background-color: hsl(5, 85%, 63%);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    letter-spacing: 3;
+    transition: 0.2s ease-in;
+}
+
+button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+.sec-side {
+    width: 18rem;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.info {
+    display: grid;
+    gap: 1rem;
+    padding: 1.2rem 1.5rem;
+    align-items: center;
+}
+
+h2 {
+    color: hsl(5, 85%, 63%);
+    font-size: 1.88rem;
+}
+
+.infoo {
+    display: grid;
+    gap: 1rem;
+}
+
+h3 {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+h3:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+hr {
+    background-color: #fff;
+}
+.infoo p{
+    color: hsl(233, 8%, 79%);
+    font-size: 0.77rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+footer {
+    width: 100%;
+    object-fit: contain;
+}
+
+.foot-content {
+    display: flex;
+    gap: 1.3rem;
+}
+.push {
+    display: flex;
+    gap: 1rem;
+}
+
+.foot-cont {
+    width: 100%;
+}
+.foot-cont h3{
+    color: hsl(233, 8%, 79%);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+
+.foot-cont p {
+    color: hsl(240, 100%, 5%);
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.foot-cont p:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+small {
+    color: hsl(233, 8%, 79%);
+    font-weight: 500;
+    word-wrap: wrap;
+    font-size: 0.72rem;
+}
+
+.pullup, #menu {
+    display: none;
+}
+
+.img {
+    width: 8rem;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 375px){
+
+    main {
+        margin: 0 auto;
+        justify-content: center;
+        position: absolute;
+        left: 54%;
+        top: 0;
+        z-index: 0;
+    }
+    
+    .logo {
+        margin-top: 1rem;
+        width: 54%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo img{
+        width: 2rem;
+    }
+    #menu {
+        display: block;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+    #menu:hover {
+        transform: scale(1.2);
+    }
+
+    #close {
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        float: right;
+        transition: 0.3s ease;
+    }
+    #close:hover {
+        transform: rotate(180deg);
+    }
+
+    .menu1 li a:hover{
+        color: hsl(5, 85%, 63%);
+    }
+
+    .pullup {
+        display: block;
+        width: 80%;
+        height: 100%;
+        background-color: hsl(0, 0%, 95%);
+        /* right: -100%; */
+        top: 0;
+        position: fixed;
+        z-index: 1;
+        padding: 1.2rem 1rem;
+        transition: 0.88s ease;
+    }
+
+    .menu1 ul{
+        display: grid;
+        gap: 1.5rem;
+        margin-top: 3.5rem;
+
+    }
+
+    .menu1 li a:hover {
+        margin-left: 0.77rem;
+    }
+
+    .menu1 li a{
+        color: #001;
+        font-size: 1.3rem;
+        font-weight: 600;
+        transition: 0.2s ease-in-out;
+    }
+   
+    .menu li {
+        display: none;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-cont {
+        width: 20.5rem;
+    }
+
+    .image-content {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .infoo p {
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    .sec-side {
+        width: 20.5rem;
+    }
+
+    .foot-content {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .img {
+        width: 5.55rem;
+    }
+
+    .foot-cont {
+        width: 15rem;
+    }
+}
